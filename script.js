@@ -32,3 +32,15 @@ getMiddle('test');
 getMiddle('testing');
 getMiddle('middle');
 getMiddle('A');
+
+
+// You get an array of numbers, return the 
+// sum of all of the positives ones.
+
+function positiveSum(arr) {
+    let sum = 0;
+    arr.forEach((element) => {
+        (element > 0) ? sum += element : sum += 0;
+    });
+    return sum;
+}
