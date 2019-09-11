@@ -67,3 +67,26 @@ function litres(time) {
 function removeChars(str) {
     return str.slice(1, str.length - 1);
 }
+
+// Usually when you buy something, you're asked whether your credit 
+// card number, phone number or answer to your most secret question 
+// is still correct. However, since someone could look over your shoulder, 
+// you don't want that shown on your screen. Instead, we mask it.
+
+function maskify(str) {
+    let arrStr = [...str];
+    for (let i = 0; i < arrStr.length - 4; i++) {
+        arrStr[i] = '#';
+    }
+    return (arrStr.toString()).replace(/,/g, '');
+}
+
+// Given an array of integers, return a new array with each value doubled.
+
+function map(x) {
+    let arrResult = [];
+    x.forEach(element => {
+         arrResult.push(element * 2);
+    });
+    return arrResult;
+}
