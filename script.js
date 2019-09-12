@@ -84,9 +84,13 @@ function maskify(str) {
 // Given an array of integers, return a new array with each value doubled.
 
 function map(x) {
-    let arrResult = [];
-    x.forEach(element => {
-         arrResult.push(element * 2);
-    });
-    return arrResult;
+    // let arrResult = [];
+    // x.forEach(element => {
+    //      arrResult.push(element * 2);
+    // });
+    // return arrResult;
+    return x.map(x => x * 2);
 }
+
+// Write an algorithm that takes an array and moves all of the zeros 
+// to the end, preserving the order of the other elements.
